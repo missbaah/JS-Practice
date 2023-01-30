@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Find the area of a triangle with 3 sides 5, 6 , 7</p>
+    <button onclick="area()">Find area</button>
+    <p id="area"></p>
+    <script>
+      let a = 5;
+      let b = 6;
+      let c = 7;
+
+      const s = (a + b + c) / 2;
+
+      const cal = s * (s - a) * (s - b) * (s - c);
+
+      const triArea = Math.sqrt(cal);
+      console.log(triArea);
+
+      function area() {
+        document.getElementById("area").innerHTML = `The area is ${triArea}`;
+      }
+    </script>
+  </body>
+</html>
