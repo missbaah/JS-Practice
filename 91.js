@@ -5,7 +5,6 @@
 */
 
 const findSum = (arr, num) => {
-  let results = 0;
   let maxVal = 0;
   for (let i = num; i < arr.length; i++) {
     maxVal += arr[i];
